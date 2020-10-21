@@ -1,0 +1,18 @@
+plugins {
+    id "scala"
+    id "com.github.maiflai.scalatest" version "0.29"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'tech.units:indriya:2.0.4'
+    compile "org.scala-lang:scala-library:2.13.+"
+    testCompile "org.scalatest:scalatest_2.13:+"
+}
+
+wrapper {
+    gradleVersion = '6.5'
+}
